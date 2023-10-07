@@ -1,15 +1,64 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Navbar from '../Shared/Header/Navbar';
+import { useContext, useState } from 'react';
+import { AuthContext } from '../../Provider/AuthProvider';
+import swal from 'sweetalert';
 
-const Register = () => {
+const Register = ({children}) => {
+    const [registerError, setRegisterError] = useState('');
+
+    const {createUserAccount} = useContext(AuthContext);
+    const navigate = useNavigate();
+
+    const handleRegisterForm = e => {
+        e.preventDefault();
+        const form = new FormData(e.currentTarget);
+        const name = form.get('name')
+        const photourl = form.get('photourl')
+        const email = form.get('email')
+        const password = form.get('password')
+
+        console.log(name, email, photourl, password);
+
+        if(password.length < 6){
+            setRegisterError('Error: Password should be 6 characters long');
+            return;
+        }
+
+        else if(!/^[!@#$%^&*()[\]{}|\\;:'"<>,.?/-_+=]+$/.test(password)) {
+            setRegisterError('Error: Password should contain a special character.');
+            return;
+        }
+        else if(!/[A-Z]/.test(password)){
+            setRegisterError(' Error: Password should contain a uppercase character.')
+            return;
+        }
+       
+        
+
+
+
+        createUserAccount(email, password)
+        .then(result => console.log(result.user),
+        swal("Registration", "User registration successfull", "success"),
+        navigate('/')
+        )
+        .catch(error => {
+            console.error(error)
+            setRegisterError(error.message);
+        }); 
+
+
+        
+    }
     return (
         <div>
         <Navbar></Navbar>
 
         <div className="hero min-h-screen">
-         <div className="card flex-shrink-0 -mt-24 h-[600px] w-1/2 shadow-2xl bg-base-100 rounded-t-lg">
+         <div className="card flex-shrink-0 mt-1 min-h-screen w-1/2 shadow-2xl bg-base-100 rounded-t-lg">
          <h2 className="py-5 text-3xl text-center bg-pinkdark1 text-white font-bold rounded-t-xl">Register Here</h2>
-           <form className="card-body">
+           <form onSubmit={handleRegisterForm} className="card-body">
            <div className="form-control">
                 <label className="label">
                   <span className="label-text text-dark2 font-bold text-xl">Name</span>
@@ -64,6 +113,9 @@ const Register = () => {
                <button className="btn bg-pinkdark1 text-white ">Register</button>
              </div>
            </form>
+           {
+                registerError && <p className='text-pink1 text-center mb-2'>{registerError}</p>
+            }
            <p className="text-center pb-8">Already have an account? <Link className="text-pinkdark1" to={'/login'}>Login here</Link></p>
          </div>
        </div>

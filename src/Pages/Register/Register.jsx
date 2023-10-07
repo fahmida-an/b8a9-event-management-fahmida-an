@@ -114,7 +114,7 @@ const Register = ({children}) => {
              </div>
            </form>
            {
-                registerError && <p className='text-pink1 text-center mb-2'>{registerError}</p>
+                registerError && <p className='text-red text-center mb-2'>{registerError}</p>
             }
            <p className="text-center pb-8">Already have an account? <Link className="text-pinkdark1" to={'/login'}>Login here</Link></p>
          </div>

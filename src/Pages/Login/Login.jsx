@@ -1,8 +1,28 @@
 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Navbar from '../Shared/Header/Navbar';
+import { useContext } from 'react';
+import { AuthContext } from '../../Provider/AuthProvider';
 
-const Login = () => {
+const Login = ({children}) => {
+const {logInUser} = useContext(AuthContext);
+const navigate = useNavigate();
+
+const handleLoginForm = e =>{
+    e.preventDefault();
+    const form = new FormData(e.currentTarget);
+    const email = form.get('email');
+    const password = form.get('password');
+    console.log(email, password);
+    logInUser(email, password)
+    .then(result => 
+      console.log(result),
+      navigate('/')
+    
+    )
+    .catch(error => console.error(error))
+
+}
 
     
     return ( 
@@ -12,7 +32,7 @@ const Login = () => {
          <div className="hero min-h-screen">
           <div className="card flex-shrink-0 -mt-24 h-[560px] w-1/2 shadow-2xl bg-base-100 rounded-t-lg">
           <h2 className="py-5 text-3xl text-center bg-pinkdark1 text-white font-bold rounded-t-xl">Login Here</h2>
-            <form className="card-body">
+            <form onSubmit={handleLoginForm} className="card-body">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text text-dark2 font-bold text-xl">Email</span>

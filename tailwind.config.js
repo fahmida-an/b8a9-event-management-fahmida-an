@@ -17,6 +17,7 @@ export default {
       gray: '#F3F3F3',
       blue: '#1fb6ff',
       black: '#000000',
+      red: '#FF0000',
      },
     extend: {
       fontFamily: {

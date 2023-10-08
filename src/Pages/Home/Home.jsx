@@ -7,6 +7,7 @@ import { HashLink } from "react-router-hash-link";
 import { useEffect, useState } from "react";
 import { data } from "autoprefixer";
 import AboutUs from "../AboutUs/AboutUs";
+import Footer from "../Footer/Footer";
 
 const Home = () => {
   const services = useLoaderData();
@@ -57,6 +58,8 @@ const Home = () => {
         <AboutUs></AboutUs>
        </div>
       </div>
+
+      <Footer></Footer>
     </div>
   );
 };

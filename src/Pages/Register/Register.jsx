@@ -7,7 +7,7 @@ import swal from 'sweetalert';
 const Register = ({children}) => {
     const [registerError, setRegisterError] = useState('');
 
-    const {createUserAccount} = useContext(AuthContext);
+    const {createUserAccount, createAccountwithGoogle} = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
 
@@ -37,8 +37,6 @@ const Register = ({children}) => {
        
         
 
-
-
         createUserAccount(email, password)
         .then(result => console.log(result.user),
         swal("Registration", "User registration successfull", "success"),
@@ -47,17 +45,29 @@ const Register = ({children}) => {
         .catch(error => {
             console.error(error)
             setRegisterError(error.message);
-        }); 
-
-
+        });
         
     }
+
+    const handleGoogleLogin = () =>{
+      createAccountwithGoogle()
+      .then(result =>{
+        console.log(result.user);
+        navigate('/')
+      })
+      .catch(error =>{
+        console.error(error)
+      })
+     }
+
+
+
     return (
         <div>
         <Navbar></Navbar>
 
-        <div className="hero min-h-screen">
-         <div className="card flex-shrink-0 mt-1 min-h-screen w-1/2 shadow-2xl bg-base-100 rounded-t-lg">
+        
+         <div className="card flex-shrink-0 mt-1 min-h-screen max-w-xl mx-auto shadow-2xl bg-base-100 rounded-t-lg">
          <h2 className="py-5 text-3xl text-center bg-pinkdark1 text-white font-bold rounded-t-xl">Register Here</h2>
            <form onSubmit={handleRegisterForm} className="card-body">
            <div className="form-control">
@@ -110,10 +120,12 @@ const Register = ({children}) => {
                 />
               </div>
              </div>
-             <div className="form-control mt-6">
+             <div className="form-control mt-3">
                <button className="btn bg-pinkdark1 text-white ">Register</button>
              </div>
            </form>
+
+              <button onClick={handleGoogleLogin} className='mb-1'>Login with <span className='text-pinkdark1'>Google</span></button>
            {
                 registerError && <p className='text-red text-center mb-2'>{registerError}</p>
             }
@@ -121,7 +133,7 @@ const Register = ({children}) => {
          </div>
        </div>
 
-    </div>
+  
     );
 };
 

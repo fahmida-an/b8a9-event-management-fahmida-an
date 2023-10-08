@@ -1,11 +1,11 @@
-
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Navbar from '../Shared/Header/Navbar';
 import { useContext } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
 
+
 const Login = ({children}) => {
-const {logInUser} = useContext(AuthContext);
+const {logInUser, createAccountwithGoogle} = useContext(AuthContext);
 const navigate = useNavigate();
 const location = useLocation();
 
@@ -25,13 +25,23 @@ const handleLoginForm = e =>{
 
 }
 
+const handleGoogleLogin = () =>{
+  createAccountwithGoogle()
+  .then(result =>{
+    console.log(result.user);
+    navigate( location?.state ? location.state : '/')
+  })
+  .catch(error =>{
+    console.error(error)
+  })
+ }
+
     
     return ( 
        <div>
          <Navbar></Navbar>
 
-         <div className="hero min-h-screen">
-          <div className="card flex-shrink-0 -mt-24 h-[560px] w-1/2 shadow-2xl bg-base-100 rounded-t-lg">
+          <div className="card flex-shrink-0 mt-4 h-[560px] max-w-xl mx-auto shadow-2xl bg-base-100 rounded-t-lg">
           <h2 className="py-5 text-3xl text-center bg-pinkdark1 text-white font-bold rounded-t-xl">Login Here</h2>
             <form onSubmit={handleLoginForm} className="card-body">
               <div className="form-control">
@@ -67,11 +77,13 @@ const handleLoginForm = e =>{
                 <button className="btn bg-pinkdark1 text-white ">Login</button>
               </div>
             </form>
-            <p className="text-center pb-8">Do not have an account? <Link className="text-pinkdark1" to={'/register'}>Register here</Link></p>
+
+            <button onClick={handleGoogleLogin} className='mb-1'>Login with <span className='text-pinkdark1'>Google</span></button>
+            <p className="text-center pb-6">Do not have an account? <Link className="text-pinkdark1" to={'/register'}>Register here</Link></p>
           </div>
         </div>
 
-     </div>
+
         
        
        

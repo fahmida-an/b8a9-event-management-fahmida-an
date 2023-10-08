@@ -2,8 +2,8 @@
     {
         "id": 1,
         "image": "https://i.ibb.co/qxCwrXw/bd4.jpg",
-        "title": "Social Event 1",
-        "category": "Social Events",
+        "title": "Event 1",
+        "category": "Weddings",
         "details": "A fantastic social event with great networking opportunities.",
         "price": 19.99,
         "views": "4.3K",
@@ -13,8 +13,8 @@
     {
         "id": 2,
         "image": "https://i.ibb.co/qxCwrXw/bd4.jpg",
-        "title": "Social Event 2",
-        "category": "Social Events",
+        "title": "Event 2",
+        "category": "Birthday Parties",
         "details": "Join us for a fun and engaging social gathering.",
         "price": 9.99,
         "views": "8.3K",
@@ -23,8 +23,8 @@
     {
         "id": 3,
         "image": "https://i.ibb.co/qxCwrXw/bd4.jpg",
-        "title": "Social Event 3",
-        "category": "Social Events",
+        "title": "Event 3",
+        "category": "Engagement Ceremony",
         "details": "An exciting social event with live entertainment and refreshments.",
         "price": 29.95,
         "views": "3.3K",
@@ -33,8 +33,8 @@
     {
         "id": 4,
         "image": "https://i.ibb.co/qxCwrXw/bd4.jpg",
-        "title": "Social Event 4",
-        "category": "Social Events",
+        "title": "Event 4",
+        "category": "Retirement ceremony",
         "details": "Join our social event to meet new people and have a great time.",
         "price": 14.50,
         "views": "5.6K",
@@ -43,8 +43,8 @@
     {
         "id": 5,
         "image": "https://i.ibb.co/qxCwrXw/bd4.jpg",
-        "title": "Social Event 5",
-        "category": "Social Events",
+        "title": "Event 5",
+        "category": "Baby Shower",
         
         "details": "A social event filled with games, music, and laughter.",
         "price": 24.99,
@@ -54,8 +54,8 @@
     {
         "id": 6,
         "image": "https://i.ibb.co/qxCwrXw/bd4.jpg",
-        "title": "Social Event 6",
-        "category": "Social Events",
+        "title": "Event 6",
+        "category": "Anniversaries",
         "details": "Experience a memorable social event with great food and company.",
         "price": 49.95,
         "views": "3.3K",

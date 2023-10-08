@@ -36,7 +36,7 @@ const ServiceCard = ({ services }) => {
        <div className="flex items-center">
        <div className="mr-40">
         <Link to={`/service/${id}`} className="inline-block" href="#">
-            <button className=" btn flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase transition-all hover:bg-pinkbright1 bg-pinkdark1 text-white">
+            <button className=" btn flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase transition-all hover:bg-pinkbright1 hover:text-black bg-pinkdark1 text-white">
              View Details
               <svg
                 xmlns="http://www.w3.org/2000/svg"

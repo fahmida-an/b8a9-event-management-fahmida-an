@@ -1,4 +1,5 @@
 import { FaEye } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const RightSide = ({ event }) => {
   const { title, id, category, details, image, views } = event;
 
@@ -13,9 +14,11 @@ const RightSide = ({ event }) => {
           <p>{details}</p>
           <div className="card-actions justify-end">
             <div className="flex items-center gap-5">
-              <button className="btn bg-pinkdark1 text-white border-none hover:text-black hover:bg-pinkbright1">
-                See Packages
-              </button>
+              <Link to={`event/${id}`}>
+                <button className="btn bg-pinkdark1 text-white border-none hover:text-black hover:bg-pinkbright1">
+                  See Packages
+                </button>
+              </Link>
               <div className="flex gap-1 items-center font-bold text-dark2">
                 <h2 className="text-black font-bold">{views}</h2>
                 <h2>

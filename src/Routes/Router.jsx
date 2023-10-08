@@ -5,6 +5,7 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import ServiceCardDetails from "../Pages/Home/ServiceCard/ServiceCardDetails";
 import PrivateRoute from "./PrivateRoute";
+import EventCard from "../Pages/Home/EventCard/EventCard";
 
 const router = new createBrowserRouter([
     {
@@ -28,6 +29,11 @@ const router = new createBrowserRouter([
                 path: "/service/:id",
                 element: <PrivateRoute><ServiceCardDetails></ServiceCardDetails></PrivateRoute>,
                 loader: () => fetch('/socialdata.json'),
+            },
+            {
+                path: "/event/:id",
+                element: <EventCard></EventCard>,
+                loader: () => fetch('/eventdata.json'),
             }
         ]
     }

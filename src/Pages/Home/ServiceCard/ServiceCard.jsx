@@ -18,7 +18,7 @@ const ServiceCard = ({ services }) => {
           <p className="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
             {details}
           </p>
-          <Link className="inline-block" href="#">
+          <Link to={`/service/${id}`} className="inline-block" href="#">
             <button className=" btn flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase transition-all hover:bg-pinkbright1 bg-pinkdark1 text-white">
              View Details
               <svg

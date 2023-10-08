@@ -3,6 +3,7 @@ import { FaHeart } from "react-icons/fa";
 import { useContext } from "react";
 import { AuthContext } from "../../../Provider/AuthProvider";
 import user from "../../../assets/user.png";
+import { HashLink } from "react-router-hash-link";
 const Navbar = ({ children }) => {
   const { user, logOut } = useContext(AuthContext);
 
@@ -24,14 +25,14 @@ const Navbar = ({ children }) => {
         </NavLink>
       </li>
       <li className="mr-4  hover:bg-pinkdark1 hover:text-white rounded-md text-pinkdark1">
-        <NavLink
-          to="/services"
+        <HashLink
+          to="/#service"
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "bg-pinkdark1 text-white" : " "
           }
         >
           Services
-        </NavLink>
+        </HashLink>
       </li>
 
       <li className="mr-4 hover:bg-pinkdark1 hover:text-white rounded-md text-pinkdark1">

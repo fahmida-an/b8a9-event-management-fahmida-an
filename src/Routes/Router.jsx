@@ -3,6 +3,7 @@ import Root from "../Layout/Root/Root";
 import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
+import ServiceCardDetails from "../Pages/Home/ServiceCard/ServiceCardDetails";
 
 const router = new createBrowserRouter([
     {
@@ -21,6 +22,11 @@ const router = new createBrowserRouter([
             {
                 path: "/register",
                 element: <Register></Register>
+            },
+            {
+                path: "/service/:id",
+                element: <ServiceCardDetails></ServiceCardDetails>,
+                loader: () => fetch('/socialdata.json'),
             }
         ]
     }

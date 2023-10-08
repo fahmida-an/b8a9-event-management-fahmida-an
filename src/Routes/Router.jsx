@@ -11,7 +11,8 @@ const router = new createBrowserRouter([
         children: [
             {
                 path: "/",
-                element:<Home></Home> 
+                element:<Home></Home>,
+                loader: () => fetch('/socialdata.json'),
             },
             {
                 path: "/login",

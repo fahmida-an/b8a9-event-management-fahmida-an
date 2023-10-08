@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/qxCwrXw/bd4.jpg",
+        "title": "Social Event 1",
+        "category": "Social Events",
+        "details": "A fantastic social event with great networking opportunities.",
+        "price": 19.99
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/qxCwrXw/bd4.jpg",
+        "title": "Social Event 2",
+        "category": "Social Events",
+        "details": "Join us for a fun and engaging social gathering.",
+        "price": 9.99
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/qxCwrXw/bd4.jpg",
+        "title": "Social Event 3",
+        "category": "Social Events",
+        "details": "An exciting social event with live entertainment and refreshments.",
+        "price": 29.95
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/qxCwrXw/bd4.jpg",
+        "title": "Social Event 4",
+        "category": "Social Events",
+        "details": "Join our social event to meet new people and have a great time.",
+        "price": 14.50
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co/qxCwrXw/bd4.jpg",
+        "title": "Social Event 5",
+        "category": "Social Events",
+        
+        "details": "A social event filled with games, music, and laughter.",
+        "price": 24.99
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co/qxCwrXw/bd4.jpg",
+        "title": "Social Event 6",
+        "category": "Social Events",
+        "details": "Experience a memorable social event with great food and company.",
+        "price": 49.95
+    }
+]

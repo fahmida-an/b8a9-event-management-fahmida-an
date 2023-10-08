@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co/6bgM1P4/bd4.jpg",
+        "title": "Service 1",
+        "category": "Catering and Decor",
+        "details": "A fantastic social event with great networking opportunities.",
+        "price": 19.99
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co/pxtFfSp/floral.jpg",
+        "title": "Service 2",
+        "category": "Floral",
+        "details": "Join us for a fun and engaging social gathering.",
+        "price": 9.99
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co/j6D57Pk/eng4.jpg",
+        "title": "Service 3",
+        "category": "Photo, Video and Audio",
+        "details": "An exciting social event with live entertainment and refreshments.",
+        "price": 29.95
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co/swTQZb4/invitation2.jpg",
+        "title": "Sevice 4",
+        "category": "Invitation",
+        "details": "Join our social event to meet new people and have a great time.",
+        "price": 14.50
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co/Tv9j2jG/rd3.jpg",
+        "title": "Service 5",
+        "category": "Venue Selection",
+        
+        "details": "A social event filled with games, music, and laughter.",
+        "price": 24.99
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co/tMgVXVT/entertainment.jpg",
+        "title": "Service 6",
+        "category": "Entertainment",
+        "details": "Experience a memorable social event with great food and company.",
+        "price": 49.95
+    }
+]

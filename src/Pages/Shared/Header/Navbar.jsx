@@ -1,16 +1,16 @@
 import { Link, NavLink } from "react-router-dom";
-import { FaHeart } from 'react-icons/fa';
+import { FaHeart } from "react-icons/fa";
 import { useContext } from "react";
 import { AuthContext } from "../../../Provider/AuthProvider";
-import user from "../../../assets/user.png"
-const Navbar = ({children}) => {
-    const {user, logOut} = useContext(AuthContext)
+import user from "../../../assets/user.png";
+const Navbar = ({ children }) => {
+  const { user, logOut } = useContext(AuthContext);
 
-    const handleSignOut = () =>{
-        logOut()
-        .then(result => console.log(result))
-        .catch(error => console.error(error))
-    }
+  const handleSignOut = () => {
+    logOut()
+      .then((result) => console.log(result))
+      .catch((error) => console.error(error));
+  };
   const navLinks = (
     <>
       <li className="mr-4 hover:bg-pinkdark1 hover:text-white rounded-md text-pinkdark1">
@@ -27,12 +27,13 @@ const Navbar = ({children}) => {
         <NavLink
           to="/services"
           className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-pinkdark1 text-white" : ""
+            isPending ? "pending" : isActive ? "bg-pinkdark1 text-white" : " "
           }
         >
           Services
         </NavLink>
       </li>
+
       <li className="mr-4 hover:bg-pinkdark1 hover:text-white rounded-md text-pinkdark1">
         <NavLink
           to="/contacts"
@@ -43,24 +44,19 @@ const Navbar = ({children}) => {
           Contacts
         </NavLink>
       </li>
-      {
-        user && 
+      {user && (
         <li className="mr-4 hover:bg-pinkdark1 hover:text-white rounded-md text-pinkdark1">
-        <NavLink
-          to="/contacts"
-          className={({ isActive, isPending }) =>
-            isPending ? "pending" : isActive ? "bg-pinkdark1 text-white" : ""
-          }
-        >
-          Booked for
-        </NavLink>
-      </li>
-      }
-
+          <NavLink
+            to="/contacts"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "bg-pinkdark1 text-white" : ""
+            }
+          >
+            Booked for
+          </NavLink>
+        </li>
+      )}
     </>
-
-
-
   );
 
   return (
@@ -91,58 +87,67 @@ const Navbar = ({children}) => {
               {navLinks}
             </ul>
           </div>
-         
-         <div>
-         <h2 className="uppercase tracking-widest text-2xl font-bold text-pinkdark1">Celebrations</h2>
 
-         <Link to="/">
-         <div className="flex items-center justify-center ">
-         <FaHeart className="text-pinkbright1"/>
-         <p className="text-lg text-center font-bold">withDreamTeam</p>
-         <FaHeart className="text-pinkbright1"/>
-         </div>
-         </Link>
+          <div>
+            <h2 className="uppercase tracking-widest text-2xl font-bold text-pinkdark1">
+              Celebrations
+            </h2>
 
-         </div>
+            <Link to="/">
+              <div className="flex items-center justify-center ">
+                <FaHeart className="text-pinkbright1" />
+                <p className="text-lg text-center font-bold">withDreamTeam</p>
+                <FaHeart className="text-pinkbright1" />
+              </div>
+            </Link>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex"></div>
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal shadow-none  px-1">{navLinks}</ul>
         </div>
         <div>
-                    {
-                        user?.email ? <div className="dropdown dropdown-end">
-                            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                                <div className="w-10 rounded-full">
-                                    <img src={user.photoURL} alt={user} />
-                                </div>
-                            </label>
-                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-96">
-                                <li>
-                                    <button className="btn btn-sm  btn-ghost">{user.email}</button>
-
-                                </li>
-                                <li>
-                                    <button className="btn btn-sm  btn-ghost"
-                                        onClick={handleSignOut}
-                                    >Logout</button>
-
-                                </li>
-                            </ul>
-                        </div>
-                            :
-                            <NavLink
-                            to="/login"
-                            className= {({ isActive, isPending }) =>
-                              isPending ? "pending" : isActive ? "bg-pinkdark1 text-white rounded-lg p-2 " :  " hover:bg-pinkdark1 hover:text-black rounded-lg p-2 text-pinkdark1"
-                            }
-                          >
-                            Login
-                          </NavLink>
-                    }
+          {user?.email ? (
+            <div className="dropdown dropdown-end">
+              <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                <div className="w-10 rounded-full">
+                  <img src={user.photoURL} alt={user} />
                 </div>
-
-      
+              </label>
+              <ul
+                tabIndex={0}
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-96"
+              >
+                <li>
+                  <button className="btn btn-sm  btn-ghost">
+                    {user.email}
+                  </button>
+                </li>
+                <li>
+                  <button
+                    className="btn btn-sm  btn-ghost"
+                    onClick={handleSignOut}
+                  >
+                    Logout
+                  </button>
+                </li>
+              </ul>
+            </div>
+          ) : (
+            <NavLink
+              to="/login"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "bg-pinkdark1 text-white rounded-lg p-2 "
+                  : " hover:bg-pinkdark1 hover:text-black rounded-lg p-2 text-pinkdark1"
+              }
+            >
+              Login
+            </NavLink>
+          )}
+        </div>
       </div>
     </div>
   );

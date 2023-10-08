@@ -5,7 +5,8 @@
         "title": "Service 1",
         "category": "Catering and Decor",
         "details": "A fantastic social event with great networking opportunities.",
-        "price": 19.99
+        "price": 19.99,
+        "rating": 4
     },
     {
         "id": 2,
@@ -13,7 +14,8 @@
         "title": "Service 2",
         "category": "Floral",
         "details": "Join us for a fun and engaging social gathering.",
-        "price": 9.99
+        "price": 9.99,
+        "rating": 5
     },
     {
         "id": 3,
@@ -21,7 +23,8 @@
         "title": "Service 3",
         "category": "Photo, Video and Audio",
         "details": "An exciting social event with live entertainment and refreshments.",
-        "price": 29.95
+        "price": 29.95,
+        "rating": 4
     },
     {
         "id": 4,
@@ -29,16 +32,17 @@
         "title": "Sevice 4",
         "category": "Invitation",
         "details": "Join our social event to meet new people and have a great time.",
-        "price": 14.50
+        "price": 14.50,
+        "rating": 5
     },
     {
         "id": 5,
         "image": "https://i.ibb.co/Tv9j2jG/rd3.jpg",
         "title": "Service 5",
-        "category": "Venue Selection",
-        
+        "category": "Venue Selection", 
         "details": "A social event filled with games, music, and laughter.",
-        "price": 24.99
+        "price": 24.99,
+        "rating": 4
     },
     {
         "id": 6,
@@ -46,6 +50,7 @@
         "title": "Service 6",
         "category": "Entertainment",
         "details": "Experience a memorable social event with great food and company.",
-        "price": 49.95
+        "price": 49.95,
+        "rating": 3
     }
 ]

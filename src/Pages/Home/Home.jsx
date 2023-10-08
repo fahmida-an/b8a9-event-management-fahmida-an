@@ -27,7 +27,7 @@ const Home = () => {
             <div>
                <div id="service"className="grid grid-cols-3">
                     <div className="col-span-2">
-                    <h2 className="text-3xl py-8 font-bold text-pinkdark1 text-center">Services</h2>
+                    <h2 className="text-3xl py-12 font-bold text-pinkdark1 text-center uppercase">Services</h2>
 
                     {
                         services.map((service) => <ServiceCard services = {service} key={service.id}></ServiceCard>)
@@ -36,8 +36,8 @@ const Home = () => {
 
                     </div>
     
-                    <div className="py-8">
-                    <h2 className="mb-8 text-3xl font-bold text-pinkdark1 text-center">SEE ALL EVENTS</h2>
+                    <div className="">
+                    <h2 className=" text-3xl font-bold text-pinkdark1 text-center py-12">SEE ALL EVENTS</h2>
                         {/* <RightSide></RightSide> */}
 
                         {

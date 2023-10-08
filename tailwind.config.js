@@ -18,6 +18,7 @@ export default {
       blue: '#1fb6ff',
       black: '#000000',
       red: '#FF0000',
+      orange: "#FFA500"
      },
     extend: {
       fontFamily: {

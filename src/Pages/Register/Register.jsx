@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Navbar from '../Shared/Header/Navbar';
 import { useContext, useState } from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
@@ -9,6 +9,7 @@ const Register = ({children}) => {
 
     const {createUserAccount} = useContext(AuthContext);
     const navigate = useNavigate();
+    const location = useLocation();
 
     const handleRegisterForm = e => {
         e.preventDefault();
@@ -41,7 +42,7 @@ const Register = ({children}) => {
         createUserAccount(email, password)
         .then(result => console.log(result.user),
         swal("Registration", "User registration successfull", "success"),
-        navigate('/')
+        navigate(location?.state ? location.state : '/')
         )
         .catch(error => {
             console.error(error)

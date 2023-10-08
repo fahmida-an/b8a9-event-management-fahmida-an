@@ -1,10 +1,23 @@
 import { Link } from "react-router-dom";
+import { FaStar } from 'react-icons/fa';
 
 const ServiceCard = ({ services }) => {
-  const { title, id, category, details, image } = services;
+  const { title, id, category, details, image, rating } = services;
+
+  const stars = [];
+  for(let i = 1; i<=5; i++){
+    // const starClassName = i <= rating ? <FaStar></FaStar> : '';
+    const isFilled = i <= rating;
+    stars.push(
+      <span key={i}>
+      {isFilled ? <FaStar className="text-orange" /> : <FaStar />}
+    </span>
+    );
+
+  }
   return (
     <div>
-      <div className="relative flex w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mt-2">
+      <div className="relative flex w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mt-4">
         <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
           <img src={image} alt="image" className="h-full w-full object-cover" />
         </div>
@@ -18,7 +31,11 @@ const ServiceCard = ({ services }) => {
           <p className="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
             {details}
           </p>
-          <Link to={`/service/${id}`} className="inline-block" href="#">
+
+
+       <div className="flex items-center">
+       <div className="mr-40">
+        <Link to={`/service/${id}`} className="inline-block" href="#">
             <button className=" btn flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase transition-all hover:bg-pinkbright1 bg-pinkdark1 text-white">
              View Details
               <svg
@@ -38,6 +55,15 @@ const ServiceCard = ({ services }) => {
               </svg>
             </button>
           </Link>
+
+        </div>
+
+        <div>
+          <p className="text-sm mb-1 text-dark2 font-semibold text-center">Reviews</p>
+        <div className="flex">{stars}</div>
+        </div>
+       </div>
+
         </div>
       </div>
     </div>

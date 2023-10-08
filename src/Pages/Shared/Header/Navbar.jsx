@@ -36,14 +36,15 @@ const Navbar = ({ children }) => {
       </li>
 
       <li className="mr-4 hover:bg-pinkdark1 hover:text-white rounded-md text-pinkdark1">
-        <NavLink
-          to="/contacts"
+        <HashLink
+          to="/#aboutus"
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "bg-pinkdark1 text-white" : ""
           }
         >
-          Contacts
-        </NavLink>
+          About Us
+        </HashLink>
+
       </li>
       {user && (
         <li className="mr-4 hover:bg-pinkdark1 hover:text-white rounded-md text-pinkdark1">

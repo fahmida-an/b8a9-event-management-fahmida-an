@@ -34,9 +34,11 @@ const Register = ({children}) => {
             setRegisterError(' Error: Password should contain a uppercase character.')
             return;
         }
-       
-        
 
+
+        
+       
+      
         createUserAccount(email, password)
         .then(result => console.log(result.user),
         swal("Registration", "User registration successfull", "success"),

@@ -69,12 +69,12 @@ const Register = ({children}) => {
         <Navbar></Navbar>
 
         
-         <div className="card flex-shrink-0 mt-1 min-h-screen max-w-xl mx-auto shadow-2xl bg-base-100 rounded-t-lg">
-         <h2 className="py-5 text-3xl text-center bg-pinkdark1 text-white font-bold rounded-t-xl">Register Here</h2>
+         <div className="card flex-shrink-0 mt-1 max-w-sm h-[600px] md:min-h-screen md:max-w-xl lg:min-h-screen lg:max-w-xl mx-auto shadow-2xl bg-base-100 rounded-t-lg">
+         <h2 className="py-2 text-xl lg:py-5 lg:text-3xl text-center bg-pinkdark1 text-white font-bold rounded-t-xl">Register Here</h2>
            <form onSubmit={handleRegisterForm} className="card-body">
            <div className="form-control">
                 <label className="label">
-                  <span className="label-text text-dark2 font-bold text-xl">Name</span>
+                  <span className="label-text text-dark2 font-bold text-sm lg:text-xl">Name</span>
                 </label>
                 <input
                   type="text"
@@ -86,7 +86,7 @@ const Register = ({children}) => {
               </div>
              <div className="form-control">
                <label className="label">
-                 <span className="label-text text-dark2 font-bold text-xl">Email</span>
+                 <span className="label-text text-dark2 font-bold text-sm lg:text-xl">Email</span>
                </label>
                <input
                  type="email"
@@ -98,7 +98,7 @@ const Register = ({children}) => {
              </div>
              <div className="form-control">
                <label className="label">
-                 <span className="label-text text-dark2 font-bold text-xl">Password</span>
+                 <span className="label-text text-dark2 font-bold text-sm lg:text-xl">Password</span>
                </label>
                <input
                  type="password"
@@ -111,7 +111,7 @@ const Register = ({children}) => {
                
               <div className="form-control">
                 <label className="label">
-                  <span className="label-text text-dark2 font-bold text-xl">Photo</span>
+                  <span className="label-text text-dark2 font-bold text-sm lg:text-xl">Photo</span>
                 </label>
                 <input
                   type="text"

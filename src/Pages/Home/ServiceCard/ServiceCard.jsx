@@ -17,8 +17,8 @@ const ServiceCard = ({ services }) => {
   }
   return (
     <div>
-      <div className="relative flex w-80 mx-auto lg:w-full lg:max-w-[48rem] flex-col lg:flex-row rounded-xl bg-white bg-clip-border shadow-md mt-4">
-        <div className="relative m-0 w-72 mx-auto lg:w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-lg lg:rounded-r-none bg-white bg-clip-border text-gray-700">
+      <div className="relative flex w-80 mx-auto md:w-72 lg:w-full lg:max-w-[48rem] flex-col lg:flex-row rounded-xl bg-white bg-clip-border shadow-md mt-4">
+        <div className="relative m-0 w-72 md:w-60 mx-auto lg:w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-lg lg:rounded-r-none bg-white bg-clip-border text-gray-700">
           <img src={image} alt="image" className="h-full w-full object-cover" />
         </div>
         <div className="p-6">

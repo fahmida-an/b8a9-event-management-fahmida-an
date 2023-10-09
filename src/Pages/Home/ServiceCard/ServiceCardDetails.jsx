@@ -18,10 +18,10 @@ const ServiceCardDetails = () => {
   return (
     <div>
       <Navbar></Navbar>
-      <div className="grid grid-cols-3 mt-10">
-        <div className="col-span-2">
+      <div className="grid grid-cols-1 lg:grid-cols-3 mt-10">
+        <div className="lg:col-span-2">
           <img
-            className="max-w-4xl mx-auto h-[400px] mb-10"
+            className=" w-80 mx-auto h-[300] lg:max-w-4xl lg:mx-auto lg:h-[400px] mb-10"
             src={detailCard.image}
             alt=""
           />

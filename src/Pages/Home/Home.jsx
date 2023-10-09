@@ -5,7 +5,6 @@ import RightSide from "./RightSide";
 import ServiceCard from "./ServiceCard/ServiceCard";
 import { HashLink } from "react-router-hash-link";
 import { useEffect, useState } from "react";
-import { data } from "autoprefixer";
 import AboutUs from "../AboutUs/AboutUs";
 import Footer from "../Footer/Footer";
 
@@ -26,8 +25,8 @@ const Home = () => {
       <Navbar></Navbar>
       <Banner></Banner>
       <div>
-        <div id="service" className="grid cols-1 lg:grid-cols-3">
-          <div className="lg:col-span-2">
+        <div id="service" className="grid cols-1 md:grid-cols-2 lg:grid-cols-3">
+          <div className="md:col-span-1 lg:col-span-2">
             <h2 className="text-3xl py-12 font-bold text-pinkdark1 text-center uppercase">
               Services
             </h2>

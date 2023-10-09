@@ -6,8 +6,8 @@ import { BiSolidPhoneCall } from "react-icons/bi";
 const AboutUs = () => {
   return (
     <div>
-      <div className="lg:max-w-4xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-2 mb-14 ">
-        <div className="card w-72 mx-auto bg-base-200 shadow-xl">
+      <div className="lg:max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-2 mb-14 ">
+        <div className="card w-72 md:w-52 mx-auto bg-base-200 shadow-xl">
           <figure className="px-10 pt-10">
             <img className="w-50 h-50 rounded-full" src={profile1} alt="" />
           </figure>
@@ -23,7 +23,7 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <div className="card mx-auto w-72 bg-base-200 shadow-xl">
+        <div className="card mx-auto w-72 md:w-52 bg-base-200 shadow-xl">
           <figure className="px-10 pt-10">
             <img className="w-50 h-50 rounded-full" src={profie2} alt="" />
           </figure>
@@ -39,7 +39,7 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <div className="card mx-auto w-72 bg-base-200 shadow-xl">
+        <div className="card mx-auto w-72 md:w-52 bg-base-200 shadow-xl">
           <figure className="px-10 pt-10">
             <img className="w-50 h-50 rounded-full" src={profile2} alt="" />
           </figure>

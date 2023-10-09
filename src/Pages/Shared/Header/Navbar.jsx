@@ -137,19 +137,19 @@ const Navbar = ({ children }) => {
               >
                 <li>
                 
-                 <button className="btn btn-sm btn-ghost text-pinkdark1 text-sm mb-1 w-full">
-                  {user.name}
+                 <button className="btn btn-sm btn-ghost text-pinkdark1 hover:bg-pinkdark1 text-sm mb-1 w-full">
+                  {user.displayName}
                 </button>
             
                 </li>
                 <li>
-                  <button className="btn btn-sm btn-ghost bg-pinkdark1 text-sm text-white mb-1 w-full">
+                  <button className="btn btn-sm btn-ghost text-pinkdark1 hover:bg-pinkdark1 text-sm mb-1 w-full">
                     {user.email}
                   </button>
                 </li>
                 <li>
                   <button
-                    className="btn btn-sm  btn-ghost bg-pinkdark1 text-sm text-white mb-1 w-full"
+                    className="btn btn-sm  btn-ghost text-pinkdark1 hover:bg-pinkdark1 text-sm mb-1 w-full"
                     onClick={handleSignOut}
                   >
                     Logout

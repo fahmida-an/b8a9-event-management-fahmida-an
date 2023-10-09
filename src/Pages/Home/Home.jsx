@@ -7,6 +7,7 @@ import { HashLink } from "react-router-hash-link";
 import { useEffect, useState } from "react";
 import AboutUs from "../AboutUs/AboutUs";
 import Footer from "../Footer/Footer";
+import ClientReviews from "../ClientReviews/ClientReviews";
 
 const Home = () => {
   const services = useLoaderData();
@@ -50,14 +51,20 @@ const Home = () => {
       </div>
 
       <div>
-       <div id="aboutus">
-       <h2 className="py-14 font-bold text-2xl lg:text-3xl text-pinkdark1 text-center">
-          Meet Our Team Section
-        </h2>
-        <AboutUs></AboutUs>
-       </div>
+        <div id="aboutus">
+          <h2 className="py-14 font-bold text-2xl lg:text-3xl text-pinkdark1 text-center">
+            Meet Our Team Section
+          </h2>
+          <AboutUs></AboutUs>
+        </div>
       </div>
 
+      <div>
+        <h2 className=" text-3xl font-bold text-pinkdark1 text-center py-8">
+          Happy Clients!
+        </h2>
+        <ClientReviews></ClientReviews>
+      </div>
       <Footer></Footer>
     </div>
   );

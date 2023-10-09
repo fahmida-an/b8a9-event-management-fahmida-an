@@ -12,11 +12,11 @@ const router = new createBrowserRouter([
     {
         path: "/",
         element: <Root></Root>,
+        errorElement: <ErrorPage></ErrorPage>,
         children: [
             {
                 path: "/",
                 element:<Home></Home>,
-                errorElement: <ErrorPage></ErrorPage>,
                 loader: () => fetch('/socialdata.json'),
             },
             {

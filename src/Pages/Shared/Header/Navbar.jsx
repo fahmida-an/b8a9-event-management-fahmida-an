@@ -57,13 +57,27 @@ const Navbar = ({ children }) => {
             Booked for
           </NavLink>
         </li>
+
+      )}
+      {user && (
+        <li className="mr-4 hover:bg-pinkdark1 hover:text-white rounded-md text-pinkdark1">
+          <NavLink
+            to="/contacts"
+            className={({ isActive, isPending }) =>
+              isPending ? "pending" : isActive ? "bg-pinkdark1 text-white" : ""
+            }
+          >
+            Featured
+          </NavLink>
+        </li>
+
       )}
     </>
   );
 
   return (
     <div>
-      <div className="navbar mb-2 shadow-lg px-5 h-32 ">
+      <div className="navbar mb-2 shadow-lg px-5 h-32 mx-auto ">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -84,31 +98,32 @@ const Navbar = ({ children }) => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52"
+              className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               {navLinks}
             </ul>
           </div>
 
-          <div>
-            <h2 className="uppercase tracking-widest text-2xl font-bold text-pinkdark1">
+          <div className=" ml-3 md:ml-10">
+            <h2 className="uppercase tracking-widest md:text-xl lg:text-2xl font-bold text-pinkdark1">
               Celebrations
             </h2>
 
             <Link to="/">
               <div className="flex items-center justify-center ">
                 <FaHeart className="text-pinkbright1" />
-                <p className="text-lg text-center font-bold">withDreamTeam</p>
+                <p className="text-md lg:text-lg text-center font-bold">withDreamTeam</p>
                 <FaHeart className="text-pinkbright1" />
               </div>
             </Link>
           </div>
         </div>
-        <div className="navbar-center hidden lg:flex"></div>
-        <div className="navbar-end hidden lg:flex">
-          <ul className="menu menu-horizontal shadow-none  px-1">{navLinks}</ul>
+        <div className="navbar-center hidden lg:flex ml-96">
+        <ul className="menu menu-horizontal shadow-none  px-1">{navLinks}</ul>
         </div>
-        <div>
+
+        <div className="navbar-end lg:flex ">
+          
           {user?.email ? (
             <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
@@ -118,16 +133,23 @@ const Navbar = ({ children }) => {
               </label>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-96"
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box lg:w-96 w-52"
               >
                 <li>
-                  <button className="btn btn-sm  btn-ghost">
+                
+                 <button className="btn btn-sm btn-ghost text-pinkdark1 text-sm mb-1">
+                  {user.name}
+                </button>
+            
+                </li>
+                <li>
+                  <button className="btn btn-sm btn-ghost bg-pinkdark1 text-sm text-white mb-1">
                     {user.email}
                   </button>
                 </li>
                 <li>
                   <button
-                    className="btn btn-sm  btn-ghost"
+                    className="btn btn-sm  btn-ghost bg-pinkdark1 text-sm text-white mb-1"
                     onClick={handleSignOut}
                   >
                     Logout

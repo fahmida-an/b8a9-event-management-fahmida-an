@@ -17,8 +17,8 @@ const ServiceCard = ({ services }) => {
   }
   return (
     <div>
-      <div className="relative flex w-full max-w-[48rem] flex-row rounded-xl bg-white bg-clip-border text-gray-700 shadow-md mt-4">
-        <div className="relative m-0 w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-none bg-white bg-clip-border text-gray-700">
+      <div className="relative flex w-80 mx-auto lg:w-full lg:max-w-[48rem] flex-col lg:flex-row rounded-xl bg-white bg-clip-border shadow-md mt-4">
+        <div className="relative m-0 w-72 mx-auto lg:w-2/5 shrink-0 overflow-hidden rounded-xl rounded-r-lg lg:rounded-r-none bg-white bg-clip-border text-gray-700">
           <img src={image} alt="image" className="h-full w-full object-cover" />
         </div>
         <div className="p-6">
@@ -34,7 +34,7 @@ const ServiceCard = ({ services }) => {
 
 
        <div className="flex items-center">
-       <div className="mr-40">
+       <div className="mr-20 lg:mr-40">
         <Link to={`/service/${id}`} className="inline-block" href="#">
             <button className=" btn flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase transition-all hover:bg-pinkbright1 hover:text-black bg-pinkdark1 text-white">
              View Details

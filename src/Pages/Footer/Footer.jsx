@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div>
-      <footer className="footer p-10 bg-base-200 text-base-content">
+      <footer className="footer grid grid-cols-3 p-10 bg-base-200 text-base-content text-pinkdark1">
         <nav>
           <header className="footer-title">Services</header>
           <a className="link link-hover">Entertainment</a>
@@ -27,7 +27,8 @@ const Footer = () => {
           <a className="link link-hover">Cookie policy</a>
         </nav>
       </footer>
-      <footer className="footer px-10 py-4 border-text-base-content border-base-300">
+
+      <footer className="footer flex justify-between px-10 py-4 border-text-base-content border-base-300">
         <aside className="items-center grid-flow-col">
           <div>
             <h2 className="uppercase tracking-widest text-2xl font-bold text-pinkdark1">

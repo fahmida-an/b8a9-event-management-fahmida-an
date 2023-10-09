@@ -1,11 +1,15 @@
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Navbar from '../Shared/Header/Navbar';
-import { useContext } from 'react';
+import { useContext, useState} from 'react';
 import { AuthContext } from '../../Provider/AuthProvider';
+import swal from 'sweetalert';
 
 
 const Login = ({children}) => {
 const {logInUser, createAccountwithGoogle} = useContext(AuthContext);
+
+const [error, setError] = useState('');
+
 const navigate = useNavigate();
 const location = useLocation();
 
@@ -18,10 +22,15 @@ const handleLoginForm = e =>{
     logInUser(email, password)
     .then(result => 
       console.log(result),
+      swal("Login","Successful", "success"),
       navigate( location?.state ? location.state : '/')
     
     )
-    .catch(error => console.error(error))
+    .catch((error) =>
+    console.log(error),
+    setError(error.messages),
+    )
+  
 
 }
 
@@ -77,7 +86,9 @@ const handleGoogleLogin = () =>{
                 <button className="btn bg-pinkdark1 text-white ">Login</button>
               </div>
             </form>
-
+         {
+                error && <p>{error}</p>
+              }
             <button onClick={handleGoogleLogin} className='mb-1'>Login with <span className='text-pinkdark1'>Google</span></button>
             <p className="text-center pb-6">Do not have an account? <Link className="text-pinkdark1" to={'/register'}>Register here</Link></p>
           </div>

@@ -26,8 +26,8 @@ const Home = () => {
       <Navbar></Navbar>
       <Banner></Banner>
       <div>
-        <div id="service" className="grid grid-cols-3">
-          <div className="col-span-2">
+        <div id="service" className="grid cols-1 lg:grid-cols-3">
+          <div className="lg:col-span-2">
             <h2 className="text-3xl py-12 font-bold text-pinkdark1 text-center uppercase">
               Services
             </h2>
@@ -52,7 +52,7 @@ const Home = () => {
 
       <div>
        <div id="aboutus">
-       <h2 className="py-14 font-bold text-3xl text-pinkdark1 text-center">
+       <h2 className="py-14 font-bold text-2xl lg:text-3xl text-pinkdark1 text-center">
           Meet Our Team Section
         </h2>
         <AboutUs></AboutUs>

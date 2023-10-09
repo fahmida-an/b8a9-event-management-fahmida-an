@@ -5,13 +5,13 @@ const RightSide = ({ event }) => {
 
   return (
     <div>
-      <div className="card w-64 bg-base-100 shadow-sm image-full mt-2 h-64 py-2 mb-2 mx-auto">
+      <div className="card w-64 bg-base-100 shadow-sm image-full mt-2 h-64 py-2 mb-4 mx-auto">
         <figure>
           <img src={image} alt="" />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">{title}</h2>
-          <p>{details}</p>
+          <h2 className="card-title">{category}</h2>
+          <h2 className="mt-2 text-orange">{title}</h2>
           <div className="card-actions justify-end">
             <div className="flex items-center gap-5">
               <Link to={`event/${id}`}>

@@ -20,14 +20,17 @@ const EventCard = () => {
         <div className="mt-10">
           <div>
             <img
-              className=" w-80 h-[200] lg:max-w-4xl mx-auto lg:h-[400px] mb-10"
+              className=" max-w-xl h-[200] lg:max-w-4xl mx-auto lg:h-[400px] mb-10"
               src={eventCard.image}
               alt=""
             />
-            <h1 className="text-3xl text-center font-bold mx-auto mb-8">{eventCard.category}</h1>
+            <div className='flex mx-auto mx-w-sm text-center justify-center lg:max-w-4xl'>
+            <h1 className="text-3xl font-bold mb-8 mr-2">{eventCard.category}</h1>
+            <h1 className='btn bg-pinkdark1 text-orange'>Price: ${eventCard.price}</h1>
+            </div>
           </div>
           <div>
-            <p className="w-80 lg:max-w-4xl mx-auto text-justify text-dark2 text-md">
+            <p className="max-w-sm lg:max-w-4xl mx-auto text-justify text-dark2 text-md">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus
               vero sequi quo minus quidem labore dolores autem nostrum facere
               accusamus, unde ab optio rerum assumenda officia deleniti provident

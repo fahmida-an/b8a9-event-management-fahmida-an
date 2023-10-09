@@ -36,7 +36,7 @@ const Home = () => {
             ))}
           </div>
 
-          <div className="">
+          <div id="events">
             <h2 className=" text-3xl font-bold text-pinkdark1 text-center py-12">
               SEE ALL EVENTS
             </h2>

@@ -2,54 +2,54 @@
     {
         "id": 1,
         "image": "https://i.ibb.co/6bgM1P4/bd4.jpg",
-        "title": "Service 1",
+        "title": "Catering and decor are the artistic pillars of event management, shaping memorable experiences and guest impressions.",
         "category": "Catering and Decor",
-        "details": "A fantastic social event with great networking opportunities.",
-        "price": 19.99,
-        "rating": 4
+        "details": " In the world of event management, the handling of the catering and decor sections is pivotal to orchestrating unforgettable and seamless experiences for attendees. These two facets, catering and decor, play a vital role in setting the ambiance, creating lasting impressions, and ensuring guest satisfaction. Catering, the art of providing delectable food and beverages, requires meticulous planning and execution. Event managers collaborate closely with catering companies or in-house teams to craft menus that cater to the event's theme, size, and dietary considerations. The menu planning process involves selecting a diverse range of options, accounting for vegetarians, vegans, and guests with allergies. Tastings are often conducted to ensure the food's quality and presentation meet the event's high standards. Additionally, the event team decides on the service style, whether it's a buffet, plated dinner, food stations, or a cocktail reception. Coordinating food service timing, staffing, and presentation logistics is fundamental to a successful catering experience." ,
+            "price": 19.99,
+            "rating": 4
     },
     {
         "id": 2,
         "image": "https://i.ibb.co/pxtFfSp/floral.jpg",
-        "title": "Service 2",
+        "title": "Floral arrangements in event management: Blooms that bring beauty, elegance, and ambiance to every occasion.",
         "category": "Floral",
-        "details": "Join us for a fun and engaging social gathering.",
+        "details": "Floral arrangements play a crucial role in event management, adding elegance, color, and ambiance to various occasions. Whether it's a wedding, corporate gathering, or social event, florists and event planners collaborate to create stunning floral designs that align with the event's theme and objectives. These arrangements can include centerpieces, bouquets, arches, and more, enhancing the visual appeal and leaving a lasting impression on attendees. The choice of flowers, colors, and placement is carefully curated to evoke specific emotions and create a cohesive atmosphere. Floral decor is not merely decorative; it's a powerful tool in transforming venues and elevating the overall guest experience. From vibrant and romantic to minimalist and modern, floral designs in event management reflect the event's essence, making them an indispensable element in the world of event planning.",
         "price": 9.99,
         "rating": 5
     },
     {
         "id": 3,
         "image": "https://i.ibb.co/j6D57Pk/eng4.jpg",
-        "title": "Service 3",
+        "title": "Photo, video, and editing services: Capturing the essence of events, creating lasting memories, and compelling narratives.",
         "category": "Photo, Video and Audio",
-        "details": "An exciting social event with live entertainment and refreshments.",
+        "details": "Photo, video, and editing services are fundamental in event management, capturing and immortalizing cherished moments. Event professionals collaborate with skilled photographers, videographers, and editors to create visually compelling narratives. They ensure that every aspect of the event is meticulously documented, from candid shots to professionally edited videos. These media assets serve as a lasting memory for attendees and valuable promotional materials for future events. The combination of skilled professionals and cutting-edge technology results in captivating visual content that enhances event experiences and leaves a lasting impact. Whether it's a wedding, corporate conference, or cultural celebration, photo, video, and editing services are essential for storytelling and preserving the essence of each unique event.",
         "price": 29.95,
         "rating": 4
     },
     {
         "id": 4,
         "image": "https://i.ibb.co/swTQZb4/invitation2.jpg",
-        "title": "Sevice 4",
+        "title": "Invitations in event management: Crafting memorable first impressions, setting the tone for unforgettable gatherings",
         "category": "Invitation",
-        "details": "Join our social event to meet new people and have a great time.",
+        "details": "Invitations are the gateway to memorable events, representing the first impression and setting the tone. Event management professionals collaborate with designers and printing services to craft invitations that reflect the event's theme, style, and purpose. From formal corporate gatherings to whimsical weddings, invitations play a crucial role in conveying essential details and creating anticipation among attendees. Professionals carefully curate invitation designs, typography, and materials to align with the event's overall branding. Digital invitations have also gained popularity, offering eco-friendly and convenient options. In the realm of event management, invitations are not mere pieces of paper or digital messages; they are the initial connection that sparks excitement and ensures a successful turnout.",
         "price": 14.50,
         "rating": 5
     },
     {
         "id": 5,
         "image": "https://i.ibb.co/Tv9j2jG/rd3.jpg",
-        "title": "Service 5",
-        "category": "Venue Selection", 
-        "details": "A social event filled with games, music, and laughter.",
+        "title": "Venue selection: A pivotal decision shaping the event's success, ambiance, and overall attendee experience",
+        "category": "Venue Selection",
+        "details": "Venue selection is a critical aspect of event management, shaping the event's success, ambiance, and overall experience. Event professionals work diligently to identify and secure the perfect location that aligns with the event's objectives, theme, and logistics. Whether it's a wedding, corporate conference, or gala, venue selection encompasses a meticulous evaluation of factors such as capacity, accessibility, amenities, and budget. The chosen venue becomes the canvas upon which the event's vision is painted, offering a backdrop for memorable moments. It can be a grand ballroom, an intimate garden, a modern conference center, or a unique outdoor space. Event managers negotiate contracts, coordinate site visits, and ensure that the venue aligns with all technical and operational requirements. Venue selection is a pivotal decision, influencing all subsequent planning and ultimately determining the event's overall success. It's an art of harmonizing location and occasion, creating an atmosphere that resonates with attendees and leaves a lasting impression.",
         "price": 24.99,
         "rating": 4
     },
     {
         "id": 6,
         "image": "https://i.ibb.co/tMgVXVT/entertainment.jpg",
-        "title": "Service 6",
+        "title": "Entertainment in event management: Elevating occasions with music, performances, and immersive experiences that captivate attendees",
         "category": "Entertainment",
-        "details": "Experience a memorable social event with great food and company.",
+        "details": "Entertainment is a cornerstone of event management, infusing energy and delight into diverse occasions. Event professionals collaborate with performers, musicians, DJs, and entertainment agencies to curate engaging and memorable experiences. Whether it's a music concert, corporate party, or cultural festival, entertainment options are tailored to resonate with the event's theme and audience. Event managers oversee talent booking, stage setup, technical requirements, and scheduling to ensure seamless and captivating performances. Entertainment is more than just a feature; it's a means of creating lasting impressions and enhancing attendee engagement. From live bands to immersive experiences, entertainment is the heart of event management, leaving guests with cherished memories and a desire for more.",
         "price": 49.95,
         "rating": 3
     }

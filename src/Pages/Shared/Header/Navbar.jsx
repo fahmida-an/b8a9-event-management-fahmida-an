@@ -14,7 +14,7 @@ const Navbar = ({ children }) => {
   };
   const navLinks = (
     <>
-      <li className="mr-4 hover:bg-pinkdark1 hover:text-white rounded-md text-pinkdark1">
+      <li className="mr-3 hover:bg-pinkdark1 hover:text-white rounded-md text-pinkdark1">
         <NavLink
           to="/"
           className={({ isActive, isPending }) =>
@@ -24,7 +24,7 @@ const Navbar = ({ children }) => {
           Home
         </NavLink>
       </li>
-      <li className="mr-4  hover:bg-pinkdark1 hover:text-white rounded-md text-pinkdark1">
+      <li className="mr-3  hover:bg-pinkdark1 hover:text-white rounded-md text-pinkdark1">
         <HashLink
           to="/#service"
           className={({ isActive, isPending }) =>
@@ -35,7 +35,7 @@ const Navbar = ({ children }) => {
         </HashLink>
       </li>
 
-      <li className="mr-4 hover:bg-pinkdark1 hover:text-white rounded-md text-pinkdark1">
+      <li className="mr-3 hover:bg-pinkdark1 hover:text-white rounded-md text-pinkdark1">
         <HashLink
           to="/#aboutus"
           className={({ isActive, isPending }) =>
@@ -47,15 +47,15 @@ const Navbar = ({ children }) => {
 
       </li>
       {user && (
-        <li className="mr-4 hover:bg-pinkdark1 hover:text-white rounded-md text-pinkdark1">
-          <NavLink
-            to="/contacts"
+        <li className="mr-1 hover:bg-pinkdark1 hover:text-white rounded-md text-pinkdark1">
+          <HashLink
+            to="/#events"
             className={({ isActive, isPending }) =>
               isPending ? "pending" : isActive ? "bg-pinkdark1 text-white" : ""
             }
           >
-            Booked for
-          </NavLink>
+            Events
+          </HashLink>
         </li>
 
       )}
@@ -67,7 +67,7 @@ const Navbar = ({ children }) => {
               isPending ? "pending" : isActive ? "bg-pinkdark1 text-white" : ""
             }
           >
-            Featured
+            Booked for
           </NavLink>
         </li>
 
@@ -118,7 +118,7 @@ const Navbar = ({ children }) => {
             </Link>
           </div>
         </div>
-        <div className="navbar-center hidden lg:flex ml-96">
+        <div className="navbar-center hidden lg:flex ml-56">
         <ul className="menu menu-horizontal shadow-none  px-1">{navLinks}</ul>
         </div>
 
@@ -133,23 +133,23 @@ const Navbar = ({ children }) => {
               </label>
               <ul
                 tabIndex={0}
-                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box lg:w-96 w-52"
+                className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box lg:w-72 md:72 w-64"
               >
                 <li>
                 
-                 <button className="btn btn-sm btn-ghost text-pinkdark1 text-sm mb-1">
+                 <button className="btn btn-sm btn-ghost text-pinkdark1 text-sm mb-1 w-full">
                   {user.name}
                 </button>
             
                 </li>
                 <li>
-                  <button className="btn btn-sm btn-ghost bg-pinkdark1 text-sm text-white mb-1">
+                  <button className="btn btn-sm btn-ghost bg-pinkdark1 text-sm text-white mb-1 w-full">
                     {user.email}
                   </button>
                 </li>
                 <li>
                   <button
-                    className="btn btn-sm  btn-ghost bg-pinkdark1 text-sm text-white mb-1"
+                    className="btn btn-sm  btn-ghost bg-pinkdark1 text-sm text-white mb-1 w-full"
                     onClick={handleSignOut}
                   >
                     Logout

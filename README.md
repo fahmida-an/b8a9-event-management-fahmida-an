@@ -1,8 +1,20 @@
-# React + Vite
+# Celebrations WithDreamTeam
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## [ Visit Our Website ](https://b8a9-event-management-d734d.web.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+Celebrations withDreamTeam is an Social Event Management Organization. Our motive is to help people to Celebrate their beautiful moment to make it more memorable.
+
+`Project Features:`
+- Email Login and Registration Authentication
+- Google Login Authentication 
+- Private Route 
+- beautiful Home page
+- Navbar and beautiful banner section
+- Event Services card with details how it works
+- 6 categories of event and details
+
+`Project Functionalities`
+
+This websites has lots of functionalities. User can explore the website and can contact our any team members through it. If any user wants to see all the information of this website  and want to know about how we manage events, they must have to registration. They have to provide their personal Information such as `name`, `email`, `profile image` and secure all the information with a `password`. After registration they can see all our services,service price and events which we have done before. They can booked any event with specific services with us. 

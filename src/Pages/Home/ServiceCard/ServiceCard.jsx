@@ -22,37 +22,19 @@ const ServiceCard = ({ services }) => {
           <img src={image} alt="image" className="h-full w-full object-cover" />
         </div>
         <div className="p-6">
-          <h6 className="mb-4 block font-sans text-base font-semibold uppercase leading-relaxed tracking-normal text-pink-500 antialiased">
-            {title}
-          </h6>
           <h4 className="mb-2 block font-sans text-2xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
             {category}
           </h4>
           <p className="mb-8 block font-sans text-base font-normal leading-relaxed text-gray-700 antialiased">
-            {details}
+            {title}
           </p>
 
 
        <div className="flex items-center">
        <div className="mr-20 lg:mr-40">
         <Link to={`/service/${id}`} className="inline-block" href="#">
-            <button className=" btn flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase transition-all hover:bg-pinkbright1 hover:text-black bg-pinkdark1 text-white">
+            <button className=" btn flex select-none items-center gap-2 rounded-lg py-3 px-6 text-center align-middle  text-xs font-bold uppercase transition-all hover:bg-pinkbright1 hover:text-black bg-pinkdark1 text-white">
              View Details
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth="2"
-                stroke="currentColor"
-                aria-hidden="true"
-                className="h-4 w-4"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"
-                ></path>
-              </svg>
             </button>
           </Link>
 

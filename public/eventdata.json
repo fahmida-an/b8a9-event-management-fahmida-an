@@ -1,10 +1,10 @@
 [
     {
         "id": 1,
-        "image": "https://i.ibb.co/qxCwrXw/bd4.jpg",
-        "title": "Event 1",
+        "image": "https://i.ibb.co/Jtj684R/catering.jpg",
+        "title": "Wedding Event Management: Crafting Your Perfect Day",
         "category": "Weddings",
-        "details": "A fantastic social event with great networking opportunities.",
+        "details": "Wedding event management is a specialized field dedicated to orchestrating memorable and seamless weddings. Event professionals work closely with couples to bring their dream weddings to life, handling every detail from planning to execution. This includes venue selection, catering, decor, entertainment, and more, all tailored to match the couple's vision and preferences. Wedding event managers coordinate timelines, budgets, and logistics, ensuring that the big day unfolds flawlessly. They also manage guest lists, seating arrangements, and RSVPs. This intricate planning process ensures that the wedding day is a stress-free and joyous occasion for the couple and their loved ones. Wedding event management is about creating moments of love, beauty, and celebration that will be cherished for a lifetime.",
         "price": 19.99,
         "views": "4.3K",
         "rating": 4
@@ -12,28 +12,28 @@
     },
     {
         "id": 2,
-        "image": "https://i.ibb.co/qxCwrXw/bd4.jpg",
-        "title": "Event 2",
+        "image": "https://i.ibb.co/3fqRRg8/bd2.jpg",
+        "title": "Birthday Party Planning: Creating Memorable Celebrations with Style",
         "category": "Birthday Parties",
-        "details": "Join us for a fun and engaging social gathering.",
+        "details": "Birthday party planning is a joyful and creative aspect of event management, focusing on celebrating an individual's special day. Event professionals collaborate with clients to organize memorable and personalized birthday parties, whether it's a child's themed celebration, a milestone birthday, or an adult gathering. The planning process includes choosing suitable venues, coordinating catering, selecting decor themes, arranging entertainment, and managing guest lists. Birthday event managers work diligently to ensure that every detail aligns with the birthday person's preferences and the event's atmosphere. From cake designs to party favors, they curate a unique and enjoyable experience that leaves lasting memories. Birthday party planning combines creativity and logistics, resulting in fun-filled occasions that bring friends and family together to celebrate the individual's journey and achievements. It's about creating happiness and cherished moments on this special day.",
         "price": 9.99,
         "views": "8.3K",
         "rating": 4.5
     },
     {
         "id": 3,
-        "image": "https://i.ibb.co/qxCwrXw/bd4.jpg",
-        "title": "Event 3",
+        "image": "https://i.ibb.co/7QnYNgD/eng2.jpg",
+        "title": "Engagement Ceremony Planning: Celebrating Love, Uniting Hearts",
         "category": "Engagement Ceremony",
-        "details": "An exciting social event with live entertainment and refreshments.",
+        "details": "Engagement party planning is a delightful facet of event management, dedicated to celebrating the commitment of two individuals embarking on their journey together. Event professionals collaborate with couples or their families to create memorable and personalized engagement celebrations. These gatherings can range from intimate family affairs to lavish soirées, and the planning process is tailored to match the couple's preferences and vision.",
         "price": 29.95,
         "views": "3.3K",
         "rating": 3.5
     },
     {
         "id": 4,
-        "image": "https://i.ibb.co/qxCwrXw/bd4.jpg",
-        "title": "Event 4",
+        "image": "https://i.ibb.co/6vMN3q8/rd1.jpg",
+        "title": " Honoring a Career, Welcoming New Beginnings.",
         "category": "Retirement ceremony",
         "details": "Join our social event to meet new people and have a great time.",
         "price": 14.50,
@@ -42,21 +42,21 @@
     },
     {
         "id": 5,
-        "image": "https://i.ibb.co/qxCwrXw/bd4.jpg",
-        "title": "Event 5",
+        "image": "https://i.ibb.co/cJBDjHK/bs1.jpg",
+        "title": "Anniversary Celebrations: Honoring Milestones, Cherishing Memories.",
         "category": "Baby Shower",
         
-        "details": "A social event filled with games, music, and laughter.",
+        "details": "Baby shower event management is a heartwarming aspect of event planning dedicated to celebrating an expectant mother and the upcoming arrival of her baby. Event professionals collaborate with the mom-to-be or her loved ones to create a special and memorable occasion.",
         "price": 24.99,
         "views": "1.3K",
         "rating": 5
     },
     {
         "id": 6,
-        "image": "https://i.ibb.co/qxCwrXw/bd4.jpg",
-        "title": "Event 6",
+        "image": "https://i.ibb.co/JzbQLCB/eng1.jpg",
+        "title": "Baby Shower Planning: Celebrating New Beginnings with Love.",
         "category": "Anniversaries",
-        "details": "Experience a memorable social event with great food and company.",
+        "details": "Anniversary event management involves orchestrating memorable celebrations of important milestones in people's lives, whether it's a wedding anniversary, corporate anniversary, or any other significant occasion. Event professionals collaborate with clients to create tailored experiences that honor and commemorate these special moments.",
         "price": 49.95,
         "views": "3.3K",
         "rating": 5
